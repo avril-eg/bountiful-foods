@@ -48,50 +48,127 @@
     </header>
 
 
-    <main>
-        <section class="hero">
-            <picture class="hero-img">
-              <source srcset="./images/collage-colorido-textura-frutas-cerca.jpg" media="(min-width: 37.5em) and (max-width: 59.99em)">
-              <source srcset="./images/collage-colorido-textura-frutas-cerca-large.jpg" media="(min-width: 60em)">
-              <img src="./images/collage-colorido-textura-frutas-cerca-small.jpg" alt="Fruits">
-            </picture>
+    <main class="fresh">
+      <section class="hero">
+        <picture class="hero-img">
+          <source srcset="./images/collage-colorido-textura-frutas-cerca.jpg" media="(min-width: 37.5em) and (max-width: 59.99em)">
+          <source srcset="./images/collage-colorido-textura-frutas-cerca-large.jpg" media="(min-width: 60em)">
+          <img src="./images/collage-colorido-textura-frutas-cerca-small.jpg" alt="Fruits">
+        </picture>
     
-        </section>
+      </section>
 
-        <div class="fresh-form">
-
-            <h1>Build Your Own Specialty Drink</h1>
-            <form>
-              <label for="first-name">First Name:</label>
-              <input type="text" id="first-name" name="first-name" required><br>
+   
+     
+      <section id="order-form">
+      
+      <h2>Build Your Own Specialty Drink</h2>
         
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required><br>
+      <form id="order-content">
+      
+        <div id="customer-info">
+          <div class="title">
+             Customer Info:
+          </div>
+      
+          <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+          </div>
+      
+          
+          <div>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+          </div>
+      
+          <div>
+            <label for="phone">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+      
+        </div>
+      
+        <div id="flavors">
+              
+          <div class="title">
+            Select up to three fruits for your drink:
+          </div>
+      
+          <label for="fruit1">Fruit 1:</label><br>
+          <select id="fruit1" name="fruit1">
+            
+          </select><br>
         
-              <label for="phone">Phone Number:</label>
-              <input type="tel" id="phone" name="phone" required><br>
+          <label for="fruit2">Fruit 2:</label><br>
+          <select id="fruit2" name="fruit2">
+          <option value="">--None--</option>
+            
+          </select><br>
         
-              <label for="fruit1">Fruit 1:</label>
-              <select id="fruit1" name="fruit1">
-                <!-- Populate with fruits from JSON -->
-              </select><br>
+          <label for="fruit3">Fruit 3:</label><br>
+          <select id="fruit3" name="fruit3">
+          <option value="">--None--</option>
+            
+          </select><br>
+      
+          </div>
+      
+              <div id="drink-base">
+      
+                  <div class="title">
+                      Select a base for your drink:
+                  </div>           
+      
+                  <label>
+                      <input type="radio" name="beverage" value="milk">
+                      Milk
+                  </label>
+                    
+                  <label>
+                      <input type="radio" name="beverage" value="water">
+                      Water
+                  </label>
+              </div>
+      
+              
+              <div id="ice-option">
+      
+                  <div class="title">
+                      Add ice to your smoothie:
+                  </div>
+                  
+      
+                  <label>
+                      <input type="radio" name="ice" value="ice">
+                      Ice
+                    </label>
+                    
+                    <label>
+                      <input type="radio" name="ice" value="no-ice">
+                      No ice
+                    </label>
+      
+              </div>
+      
+              
+              <div id="additional-instructions">
+                  <div class="title">Add any additional instructions:</div>
+              <textarea name="message" rows="4" cols="40">N/A</textarea>
+      
+              </div>
+              
+                
+                
+                
+                
+          <input id="order-submit" class="button" type="submit" value="Submit Order">
+          
+          
+        </form>
         
-              <label for="fruit2">Fruit 2:</label>
-              <select id="fruit2" name="fruit2">
-                <!-- Populate with fruits from JSON -->
-              </select><br>
-        
-              <label for="fruit3">Fruit 3:</label>
-              <select id="fruit3" name="fruit3">
-                <!-- Populate with fruits from JSON -->
-              </select><br>
-        
-              <label for="instructions">Special Instructions:</label>
-              <textarea id="instructions" name="instructions"></textarea><br>
-        
-              <input type="submit" value="Submit">
-            </form>
-    </main>
+        </div>
+        </main>
     <footer>
     <section class="info">
         <div class="footer-logo">
@@ -126,7 +203,7 @@
        
             <p>Weather Data from <br>
               OpenWeatherMap.com <br>
-            <a href="attribution.html">Attribution Credits</a>
+            <a href="./atribution.html">Attribution Credits</a>
             </p>
     </section>
 
