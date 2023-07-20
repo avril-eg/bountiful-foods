@@ -1,0 +1,236 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background:  #f9faf4;
+    color:  #4a6163;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.header-logo img {
+	width: 100px;
+}
+
+h1 {
+    color: #4a6163;
+	text-align: center;
+	font-size: 1.7rem;
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+nav {
+	max-width: 700px;
+	margin: 10px auto;
+}
+
+/* small view navigation */
+#hamButton {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: fit-content;
+	font-size: 1.8rem;
+	padding: .5rem;
+	color: #4a6163;
+    background-color: transparent;
+    border: none;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #f17a7e;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #f9faf4; 
+	font-weight: bold;  
+}
+
+.navigation li a:hover {
+	background-color: #f9a66c;
+	color: #f9faf4;
+	font-weight: 500;
+}
+
+/* when the button is clicked - the responsive class is added and accounted for here */
+.navigation.responsive li {
+	display: block;
+	width: 100%;
+}
+
+.navigation.responsive li a {
+	display: block;
+}
+
+.social img {
+    float:right;
+	width: 40px;
+	margin: 0 auto;
+}
+
+.hero {
+    display:inline-block;
+    max-width: 100%;
+	background-color: #ffc94b;
+	margin-top: .7rem;
+	padding: 0  0 .7rem 0;
+}
+
+
+
+
+.hero-img img {
+	width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+h3 {
+	display: inline;
+	margin-top: .8rem;
+	margin-left: 1rem;
+	padding: .3rem;
+}
+
+div .button {
+	padding: 2rem;
+}
+
+.button a {
+	box-shadow: 0px 10px 14px -7px #303036;
+  	background-color:#f17a7e;
+	border-radius: 45px;
+	display: block;
+	cursor:pointer;
+	color:whitesmoke;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem .3rem 1rem .3rem;
+	text-decoration:none;
+	text-align: center;  
+}
+
+
+.sections-grid{
+	display: flex;
+	flex-direction: column;
+  }
+
+
+.user-drink {
+	background-color: #f9a66c;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	box-shadow: 0 0 7px #777;
+	margin: .8rem;
+}
+
+.user-drink h4 {
+	margin: .5rem;
+}
+
+.user-drink img {
+	width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.coastal {
+	background-color: #ffc94b;
+}
+
+.coastal img {
+	width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.weather{
+	background-color: #f9faf4;
+	padding: 15px 15px;
+	height: 100%;
+  }
+ 
+  .weather img {
+	width: 100px;
+	border-radius: 35%;
+	display: block;
+	margin: 0 auto ;
+	padding: .3rem;
+  }
+  .weather .forecast img {
+	width: 40px;
+	background-color:  #ffc94b;
+	border-radius: 35%;
+	border: none;
+	display: block;
+	margin: 5px auto;
+  }
+  .weather-card h3 {
+	font-size: 26px;
+	margin: 0;
+	text-align: center;
+	color: #5a432b;
+  }
+  .weather-card p {
+	font-size: 18px;
+	text-align: center;
+	color: #5a432b;
+  }
+  .weather-card .temperature{
+	font-size: 30px;
+	text-align: center;
+	color: #5a432b;
+  }
+  .weather .forecast {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: .8em;
+	margin: 15px auto 15px auto;
+	width: 90%;
+  }
+  .weather .forecast div{
+	margin-top: 15px;
+  }
+
+.weather .forecast img{
+  margin-top: 5px;
+  margin-bottom: 8px;
+ 
+}
+  .weather .forecast .day .temp {
+	font-size: 20px;
+	text-align: center;
+  }
+
+footer {
+	background-color: #f9a66c;
+	text-align: center;
+	padding: 1rem 0    
+}
+
+

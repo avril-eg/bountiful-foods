@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bountiful Foods</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section class="headings">
+          <picture class="header-logo">
+             <a href="./index.html">
+             <img src="./images/logo_bountiful.png" width="100" alt="Bountiful Foods Logo"></a>
+          </picture>
+
+    
+        <a href="index.html">
+        <h1>Bountiful Foods</h1>
+        </a>
+        </section>
+    
+        <nav>
+            <button id="hamButton">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="./index.html" class="active"> Home</a></li>
+                <li><a href="./fresh.html"> Fresh </a></li>
+                <li><a href="./about-us.html"> About Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="social">
+        <a href="https://www.facebook.com/" >
+        <img src="./images/circle_facebook.png" alt="Facebook"></a>
+        <a href="https://www.LinkedIn.com/" >
+        <img  src="./images/circle_linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/" >
+        <img src="/images/circle_instagram.png" alt="Instagram"></a>
+        </section>
+     
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <picture class="hero-img">
+              <source srcset="./images/collage-colorido-textura-frutas-cerca.jpg" media="(min-width: 37.5em) and (max-width: 59.99em)">
+              <source srcset="./images/collage-colorido-textura-frutas-cerca-large.jpg" media="(min-width: 60em)">
+              <img src="./images/collage-colorido-textura-frutas-cerca-small.jpg" alt="Fruits">
+            </picture>
+    
+        </section>
+
+        <div class="fresh-form">
+
+            <h1>Build Your Own Specialty Drink</h1>
+            <form>
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" required><br>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+        
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required><br>
+        
+              <label for="fruit1">Fruit 1:</label>
+              <select id="fruit1" name="fruit1">
+                <!-- Populate with fruits from JSON -->
+              </select><br>
+        
+              <label for="fruit2">Fruit 2:</label>
+              <select id="fruit2" name="fruit2">
+                <!-- Populate with fruits from JSON -->
+              </select><br>
+        
+              <label for="fruit3">Fruit 3:</label>
+              <select id="fruit3" name="fruit3">
+                <!-- Populate with fruits from JSON -->
+              </select><br>
+        
+              <label for="instructions">Special Instructions:</label>
+              <textarea id="instructions" name="instructions"></textarea><br>
+        
+              <input type="submit" value="Submit">
+            </form>
+    </main>
+    <footer>
+    <section class="info">
+        <div class="footer-logo">
+        <img  src="./images/logo_bountiful.png" alt="Bountiful Foods logo" width="300" >
+        </div>
+        <div class="address">
+            <h3> From the field to your home!</h3>
+            <p>1000 Carlsbad, Blvd<br>
+            Carlsbad, CA 90210</p>
+        </div>
+    
+        <div class="contact">
+
+        <p><a href="mailto:info@bountifulfoods.org">info@bountifulfoods.org</a>
+        <a href="tel:7604348120">(760)434-8120</a></p>
+
+        <a class="map"
+            href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1603788,-117.3489614,19.25z">
+            📍Location Map</a>
+        </div>
+
+        <p>©<span id="year"></span> Bountiful Foods</p>
+
+    </section>  
+        <div> 
+            <br>
+        </div>
+    <section class="credit">
+            <p>Avril Escalante | WDD230 Final Project<br>       
+               Last Updated: <span id="timestamp"></span>
+            </p>
+       
+            <p>Weather Data from <br>
+              OpenWeatherMap.com <br>
+            <a href="attribution.html">Attribution Credits</a>
+            </p>
+    </section>
+
+</footer>
+    
+  <script src="./scripts/script.js"></script> 
+
+</body>
+
+</html>

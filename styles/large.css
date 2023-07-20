@@ -1,0 +1,40 @@
+@media only screen and (min-width: 55em) {
+
+h2 {
+    text-align: center;
+}
+
+.hero {
+    max-width: 100%;
+    margin: .8rem auto;
+}
+    
+
+.hero-image {
+    align-items: center;
+    justify-items: center;
+}
+
+.user-drink img {
+	width: 80%;
+    overflow: hidden;
+    object-fit: fill;
+    align-content: center;
+}
+
+.coastal {
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+.coastal h3 {
+    font-size: 1.rem;
+    padding: .8rem;
+}
+
+.coastal img {
+	align-items: center;
+    justify-items: center;
+}
+
+}
